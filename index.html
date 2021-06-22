@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">  
     <!-- displays site properly based on user's device -->
 
     <link
@@ -26,12 +33,33 @@
     </style>
   </head>
   <body>
-    Todo
-
-    <!-- Add dynamic number -->
-    items left All Active Completed Clear Completed Drag and drop to reorder
-    list
-
-    <div class="attribution">Coded by <a href="#">Your Name Here</a>.</div>
+    <header id="header">
+      <h1>T O D O</h1>
+      <button id="weather"><img src="./images/icon-moon.svg" id="weatherImage" ></button>
+    </header>
+    <main >
+      <div class="appbackground">
+        <input type="text" placeholder="Create a task...">
+      </div>
+      <div class="appbackground">
+        <ul id="list">
+        </ul>
+        <section>
+          <div id="itemCount"></div>
+          <div id="desktop-view">
+            <button id="all">All</button>
+            <button id="active">Active</button>
+            <button id="completed">Completed</button>
+          </div>
+          <button id="clear">Clear Completed</button>
+        </section>
+     </div>
+    </main>
+    <footer >
+      <div class="attribution">Coded by <a href="https://github.com/Kintttt" target="_blank">Temitope</a>.</div>
+    </footer>
   </body>
+
+  <script type="text/javascript" src="app.js"></script>
+
 </html>
