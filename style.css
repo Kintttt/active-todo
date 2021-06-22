@@ -5,7 +5,7 @@
 
 body{
     background-image: url("./images/bg-desktop-light.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     display: flex;
     flex-direction: column;
     justify-content: flex-start; 
@@ -75,7 +75,7 @@ section button:hover{
 }
 body.night{
     background-image: url("./images/bg-desktop-dark.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     background-color: #181925;
 }
 .night ul, .night footer{
@@ -157,6 +157,7 @@ footer{
 
 .checkbox span{
     margin-left: 2em;
+    display: block;
 }
 
 li{
@@ -193,6 +194,9 @@ li{
     flex-direction: row;
     justify-content: space-between;
 }
+label{
+    overflow: scroll;
+}
 
 #desktop-view button{
     padding: 0 1.5em;
@@ -200,7 +204,6 @@ li{
 
 .night footer{
     color: white;
-    font-size: 2em;
     font-weight: bold,;
 }
 
@@ -225,7 +228,6 @@ li{
         justify-content: space-evenly;
         align-items: center;
         width: unset;
-        background-color: white;
         box-shadow: 17px -4px 68px -20px rgb(0 0 0 / 62%);
         border-radius: 0.5em;
     }
@@ -234,6 +236,12 @@ li{
         position: relative;
         margin-bottom: 6em;
     }
+
+    .night #desktop-view{
+        background-color: #25283b;
+        color: #878aa0;
+    }
+
 
 }
 
@@ -251,5 +259,12 @@ li{
     .night #desktop-view{
         background-color: #25283b;
         color: #878aa0;
+    }
+
+    @media only screen and (max-width: 320px){
+        #desktop-view button{
+            padding: 0;
+        }
+
     }
 }
